@@ -65,7 +65,8 @@ const AllocationForm = (props) => {
                         id='cost'
                         value={cost}
                         style={{ marginLeft: '2rem' , size: 10}}
-                        onChange={(event) => setCost(event.target.value)}>
+                        min={0}
+                        onChange={(event) => {if (event.target.value < 0) {alert("The value cannot be negative");return;} else {setCost(event.target.value)}}}>
                         </input>
 
                     <button className="btn btn-primary" onClick={submitEvent} style={{ marginLeft: '2rem' }}>
