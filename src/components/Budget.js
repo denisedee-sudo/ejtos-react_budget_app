@@ -9,7 +9,11 @@ const Budget = () => {
         if (newBudget < 0) {
             alert("The value cannot be negative");
             return;
-        } else {
+        } else if (newBudget > 20000) {
+            alert("The value cannot exceed £20000");
+            return;
+        }
+        else {
             setNewBudget(newBudget);
             dispatch({
                 type: 'SET_BUDGET',
