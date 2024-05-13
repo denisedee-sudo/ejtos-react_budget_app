@@ -52,7 +52,7 @@ const ExpenseItem = (props) => {
                 {/* <button onClick={event=> increaseAllocation(props.name)}>+</button> */}
             <FaPlusCircle className='h3 text-hover text-success' onClick={event=> increaseAllocation(props.name)}></FaPlusCircle>
             </td>
-            <td className='expense-item'><TiDelete size='1.5em' onClick={handleDeleteExpense}></TiDelete></td>
+            <td className='expense-item'><TiDelete className='text-hover' size='1.5em' onClick={handleDeleteExpense}></TiDelete></td>
         </tr>
     );
 };
