@@ -31,7 +31,9 @@ const Budget = () => {
     return (
 <div className='alert alert-secondary'>
 <span>Budget: {currency}{budget}</span>
-{currency}<input type="number" step="10" value={newBudget} onChange={handleBudgetChange}></input>
+<div className='d-flex flex-row'>
+    <div className='m-1'>{currency}</div><input className='col-11' type="number" step="10" value={newBudget} onChange={handleBudgetChange}></input>
+</div>
 </div>
     );
 };
