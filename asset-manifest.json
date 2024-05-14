@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ejtos-react_budget_app/static/css/main.42769844.css",
-    "main.js": "/ejtos-react_budget_app/static/js/main.0b18c6ce.js",
+    "main.js": "/ejtos-react_budget_app/static/js/main.0dc4e073.js",
     "static/js/453.4c44d50b.chunk.js": "/ejtos-react_budget_app/static/js/453.4c44d50b.chunk.js",
     "index.html": "/ejtos-react_budget_app/index.html",
     "main.42769844.css.map": "/ejtos-react_budget_app/static/css/main.42769844.css.map",
-    "main.0b18c6ce.js.map": "/ejtos-react_budget_app/static/js/main.0b18c6ce.js.map",
+    "main.0dc4e073.js.map": "/ejtos-react_budget_app/static/js/main.0dc4e073.js.map",
     "453.4c44d50b.chunk.js.map": "/ejtos-react_budget_app/static/js/453.4c44d50b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.42769844.css",
-    "static/js/main.0b18c6ce.js"
+    "static/js/main.0dc4e073.js"
   ]
 }
