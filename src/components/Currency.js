@@ -2,10 +2,11 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 const Currency = () => {
     const { currency, dispatch } = useContext(AppContext);
+    // eslint-disable-next-line no-unused-vars
     const [newCurrency, setNewCurrency] = useState(currency);
     
     const handleCurrencyChange = (event) => {
-        newCurrency = event.target.value
+        let newCurrency = event.target.value
         setNewCurrency(newCurrency);
         dispatch({
             type: 'CHG_CURRENCY',
