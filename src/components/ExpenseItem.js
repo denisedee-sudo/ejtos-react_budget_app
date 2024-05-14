@@ -5,7 +5,7 @@ import { FaPlusCircle, FaMinusCircle } from "react-icons/fa";
 import { AppContext } from '../context/AppContext';
 
 const ExpenseItem = (props) => {
-    const { dispatch } = useContext(AppContext);
+    const { dispatch, currency } = useContext(AppContext);
 
     const handleDeleteExpense = () => {
         dispatch({
@@ -43,7 +43,7 @@ const ExpenseItem = (props) => {
     return (
         <tr>
             <td className='expense-item'>{props.name}</td>
-            <td className='expense-item'>£{props.cost}</td>
+            <td className='expense-item'>{currency}{props.cost}</td>
             <td className='expense-item'>
                 {/* <button onClick={event=> decreaseAllocation(props.name)}>-</button> */}
                 <FaMinusCircle className='h3 text-hover text-danger' onClick={event=> decreaseAllocation(props.name)}></FaMinusCircle>
