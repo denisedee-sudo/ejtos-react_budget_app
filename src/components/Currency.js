@@ -5,7 +5,7 @@ const Currency = () => {
     const [newCurrency, setNewCurrency] = useState(currency);
     
     const handleCurrencyChange = (event) => {
-        let newCurrency = event.target.value
+        newCurrency = event.target.value
         setNewCurrency(newCurrency);
         dispatch({
             type: 'CHG_CURRENCY',
